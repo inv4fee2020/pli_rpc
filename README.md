@@ -13,6 +13,7 @@ The script is designed to find the two files in the main `plugin-deployment` fol
 
 It then updates the strings to use the latest RPC & WS endpoints. As part of this process the script also attempted to find the correct filenames that need to be updated.
 
+
 The filenames used in both the official GoPlugin & Inv4Fee2020 repositories are as follows;
 
         2_nodeStartPM2.sh
@@ -23,7 +24,8 @@ Other filenames that have been used, which the script checks for are as follows;
         startNode.sh
         startEI.sh
 
-Once the correct filenames are located
+Once the correct filenames are located the string values are updated.
+
 
 ## How to run the script
 
