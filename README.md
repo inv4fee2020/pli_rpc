@@ -6,12 +6,9 @@ Simple script to update an existing plugin node installation rpc & ws endpoints 
 
 ## What does this script do?
 
-The script is designed to find the two files in the main `plugin-deployment` folder that hold the following strings; 
+The script is designed to find the two files in the main `plugin-deployment` folder that hold the WSS & RPC strings. 
 
-        export ETH_URL
-        plirpc.blocksscan.io
-
-It then updates the strings to use the latest RPC & WS endpoints. As part of this process the script also attempted to find the correct filenames that need to be updated.
+It then updates the strings to use the selected RPC & WS endpoints from the options list. As part of this process the script also attempts to find the correct filenames that need to be updated.
 
 
 The filenames used in both the official GoPlugin & Inv4Fee2020 repositories are as follows;
