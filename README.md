@@ -36,3 +36,16 @@ Once the correct filenames are located the string values are updated.
 
  ```
 
+
+## Refreshing your local repo
+
+As the code is updated it will be necessary to update your local repo from time to time. To do this you have two options;
+
+
+1. Force git to update the local repo by overwriting the local changes, which in this case are the file permission changes. Copy and paste the following code;
+        
+        cd ~/pli_rpc
+        git fetch
+        git reset --hard HEAD
+        git merge '@{u}'
+        chmod +x *.sh
