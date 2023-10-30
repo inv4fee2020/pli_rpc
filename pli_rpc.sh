@@ -18,6 +18,7 @@ FUNC_RPC_MENU(){
             echo -e "${GREEN}       ##  2 -- Set to 'blocksscan' option ${NC}"
             echo -e "${GREEN}       ##  3 -- Set to 'icotokens' option ${NC}"
             echo -e "${GREEN}       ##  4 -- Set to 'pliws.xdcrpc' option ${NC}"
+            echo -e "${GREEN}       ##  5 -- Set to 'xinfin rpc' option ${NC}"
             echo
             read -t30 -r -p "       Enter the option NUMBER from the list above : " _RES_INPUT
             if [ $? -gt 128 ]; then
@@ -50,6 +51,11 @@ FUNC_RPC_MENU(){
                 4* ) 
                     VARVAL_RPC="https://pliws.xdcrpc.com"
                     VARVAL_WSS="wss://pliws1.xdcrpc.com"
+                    break
+                    ;;
+                5* ) 
+                    VARVAL_RPC="https://erpc.xinfin.network"
+                    VARVAL_WSS="wss://ws.xinfin.network"
                     break
                     ;;
                 * ) echo -e "${RED}  please select a NUMBER from the list${NC}";;
